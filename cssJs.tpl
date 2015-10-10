@@ -1,0 +1,1 @@
+<%= contents.replace(/"/g, "'") %>

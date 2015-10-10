@@ -1,0 +1,33 @@
+{
+  "name": "my-print-space-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mydylan/my-print-space.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mydylan/my-print-space/issues"
+  },
+  "homepage": "https://github.com/mydylan/my-print-space",
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-csslint": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-slim": "^0.3.0",
+    "gulp-slm": "^1.0.3",
+    "gulp-wrap": "^0.11.0",
+    "jquery": "^2.1.4"
+  }
+}
