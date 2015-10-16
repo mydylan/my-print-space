@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -45,10 +44,13 @@ table {
 html {
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 }
 body {
 	font-size: 14px;
-	font-family: Montserrat;
+	font-weight: 400;
+	font-family: Montserrat-Light;
+	overflow: hidden;
 }
 a {
 	&:hover, 
@@ -58,4 +60,7 @@ a {
 		text-decoration: none;
 		color: white;
 	}
+}
+.margin-none {
+	margin: 0 !important;
 }

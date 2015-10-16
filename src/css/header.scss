@@ -4,4 +4,121 @@ header {
 	height: 60px;
 	background-color: #2E3C43;
 	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+
+	.logo {
+		width: 180px;
+		height: 60px;
+		margin: 0 0 0 30px;
+		display: block;
+		background: url(_link_/logo.png) no-repeat center;
+	}
+	
+	.list {
+		margin: 22px 0 0 0;
+		a {
+			margin: 0 20px 0 0;
+			color: #eee;
+			&.active {
+				color: #ff4f81;
+			}
+			&:last-child {
+				margin: 0;
+			}
+			&:hover {
+				color: #fff;
+			}
+		}
+		a.active:hover {
+			color: #ff4f81;
+		}
+	}
+	
+	.list-menu {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		.list-icon {
+			display: block;
+			position: relative;
+		    left: 15px;
+		    top: 18px;
+			color: white;
+			font-size: 20px;
+			width: 13px;
+			height: 22px;
+			background: url(_link_/left-arrow.png) no-repeat center;
+			background-size: 13px;
+		}
+	}
+
+	.account {
+		display: flex;
+		align-items: center;
+		margin: 0 20px 0 0;
+		a {
+			display: block;
+			width: 90px;
+			height: 36px;
+			border: 2px solid #ddd;
+			box-sizing: border-box;
+			border-radius: 20px;
+			color: #eee;
+			font-size: 16px;
+			text-align: center;
+			line-height: 32px;
+			transition: border-color 0.4s cubic-bezier(0.04, 0.68, 0.43, 0.93), color 0.4s cubic-bezier(0.04, 0.68, 0.43, 0.93);
+			&:hover {
+				text-decoration: none;
+				color: #fff;
+				border: 2px solid #ff4f81;
+				cursor: pointer;
+			}
+		}
+		.sign-up {
+			border: none;
+			&:hover {
+				border: none;
+			}
+		}
+		span {
+			color: #eee;
+			margin: 0 10px;
+		}
+	}
+
+	.account-menu {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		right: 0;
+   		.account-icon {
+   			display: block;
+		    right: 15px;
+		    top: 17px;
+		    position: absolute;
+			width: 21px;
+			height: 24px;
+			background: url(_link_/account.png);
+			background-size: 21px 24px;
+		}
+	}
+}
+
+
+/**********************
+	MOBILE
+***********************/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	header {
+		.header-logo {
+			margin: 0 auto;
+		}
+		.logo {
+			background: url(_link_/logo-mobile.png) no-repeat center;			
+			background-size: 140px;
+			margin: 0;
+		}
+	}
 }

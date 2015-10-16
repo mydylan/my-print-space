@@ -30,6 +30,8 @@
     "gulp-slim": "^0.3.0",
     "gulp-slm": "^1.0.3",
     "gulp-wrap": "^0.11.0",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "jquery-mobile": "^1.4.1",
+    "normalize.css": "^3.0.3"
   }
 }
