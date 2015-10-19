@@ -19,6 +19,9 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 		position: relative;
 		background-color: #f4f4f4;
 	}
+
+//-----------------------SLIDER----------------------------------//
+
 	.left-wrapper {
 		display: inline-block;
 		position: relative;
@@ -74,9 +77,9 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				    &:hover {
 				    	background-color: $light_blue;
 				    }
-			    	&:last-child {
-			    		margin: 0;
-			    	}
+		    	}
+		    	&:last-child {
+		    		margin: 0;
 		    	}
 		    	&.active a {
 				    background-color: rgba(0, 0, 0, 0);
@@ -84,38 +87,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 		    	}
 		    }
 		}
-		/* Indicators list style */
-		// .article-slide .img-indicators {
-		//     bottom: 0;
-		//     left: 0;
-		//     margin-left: 5px;
-		//     width: 100%;
-		// }
-		// /* Indicators list style */
-		// .article-slide .img-indicators li {
-		//     border: medium none;
-		//     border-radius: 0;
-		//     float: left;
-		//     height: 54px;
-		//     margin-bottom: 5px;
-		//     margin-left: 0;
-		//     margin-right: 5px !important;
-		//     margin-top: 0;
-		//     width: 100px;
-		// }
-		// /* Indicators images style */
-		// .article-slide .img-indicators img {
-		//     border: 2px solid #FFFFFF;
-		//     float: left;
-		//     height: 54px;
-		//     left: 0;
-		//     width: 100px;
-		// }
-		// /* Indicators active image style */
-		// .article-slide .img-indicators .active img {
-		//     border: 2px solid #428BCA;
-		//     opacity: 0.7;
-		// }
 	}
 	.right-wrapper {
 		display: inline-block;
@@ -180,6 +151,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 						margin: 0;
 					    font-weight: 600;
 						transition: color 0.4s $bezier;
+						padding: 10px 0;
 						&:hover {
 							border-color: white;
 							background-color: white;
@@ -211,9 +183,11 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 							font-weight: 600;
 						}
 						.size-list {
+							display: flex;
+							justify-content: space-between;
 							margin: 20px 0 0 0;
 							li {
-								float: left;
+								display: inline-block;
 								color: #ccc;
 								width: 50px;
 								height: 50px;
@@ -221,7 +195,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 								font-size: 18px;
 								text-align: center;
 							    padding: 16px 0;
-							    margin: 0 20px 0 0;
 								&.active {
 									color: #000;
 								}
@@ -295,6 +268,9 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 			}
 		}
 	}
+
+//------------------------BOTTOM SLIDER---------------------//
+
 	.bottom-panel {
 		width: 100%;
 		height: 100%;
@@ -354,7 +330,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
 
 /**********************
-	MOBILE
+	    MOBILE
 ***********************/
 
 
@@ -373,6 +349,9 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				height: 300px;
 				width: 300px;
 			}
+
+//--------------------------SLIDER-----------------------//
+
 			.carousel-indicators {
 				position: relative;
 			    z-index: 15;
@@ -399,7 +378,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 			    	&:last-child {
 			    		margin: 0;
 			    	}
-			 //    	}
 			    	&.active a {
 			    		box-sizing: content-box;
 			    		position: relative;
@@ -410,6 +388,9 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 			    }
 			}
 		}
+
+//---------------DETAILS-----------------//
+
 		.right-wrapper {
 			.details-wrapper {
 				margin: 30px 12px 0;
@@ -455,14 +436,14 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				.item-details {
 					margin: 40px 0 0 0;
 					font-weight: 600;
-					.item-size {
+					.item-size-list {
 						margin: 25px 0 0 0;
 						position: relative;
 						.size-list {
-							margin: 15px 0 0 0;
-							width: 100%;
 							display: flex;
 							justify-content: space-between;
+							margin: 15px 0 0 0;
+							width: 100%;
 							.size {	
 								display: inline-block;
 								color: #ccc;
@@ -480,26 +461,26 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 								}
 							}
 						}
-						.item-size-table {
-							margin: 25px 0 0 0;
-							.size-table {
-								margin: 15px 0 0 0;
-							    color: #8d8d8d;
-							    .table {
-							    	margin: 0;
-							    }
-								tr {
-									border-bottom: 1px solid #ddd;
-									&:first-child {
-										color: #000;
-									}
+					}
+					.item-size-table {
+						margin: 25px 0 0 0;
+						.size-table {
+							margin: 15px 0 0 0;
+						    color: #8d8d8d;
+						    .table {
+						    	margin: 0;
+						    }
+							tr {
+								border-bottom: 1px solid #ddd;
+								&:first-child {
+									color: #000;
 								}
-								th {
-									border: none;
-									text-align: center;
-									&:first-child {
-										color: #000;
-									}
+							}
+							th {
+								border: none;
+								text-align: center;
+								&:first-child {
+									color: #000;
 								}
 							}
 						}
@@ -534,6 +515,9 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 			}
 		}
 	}
+
+//---------------------------BOTTOM SLIDER-----------------//
+
 	.bottom-panel-mobile {
 		margin: 40px 0 0 0;
 		padding: 40px 0 0 0;
@@ -557,10 +541,39 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 	}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-
-}
-
-@media screen and (min-width: 992px) {
-	
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+	.product-details {
+		.details-wrapper {
+			margin: 50px 30px 0;
+		}
+		.left-wrapper {
+			.indicators {
+				width: 80px;
+				margin-left: 258px;
+			}
+			.gallery .item img {
+				margin: 0 0 0 150px;
+			}
+		}	
+		.bottom-panel {
+			padding-left: 220px;
+			.nav-items {
+				width: 220px;
+				margin-left: -220px;
+			}
+		}
+	}
+	.size-list {
+		li {
+			width: 40px !important;
+			height: 40px !important;
+			padding: 12px 0 !important;
+			font-size: 16px !important;
+		}
+	}
+	.tabs-wrapper {
+		a {
+			font-size: 12px !important;
+		}
+	}
 }
