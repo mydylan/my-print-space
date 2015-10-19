@@ -1,8 +1,15 @@
+$pink: #ff4f81;
+$grey_blue: #2E3C43;
+$light_blue: #00cdaf;
+$light_grey: #ddd;
+$dark_grey: #8d8d8d;
+$bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
+
 footer {
  	position: relative;
 	width: 100%;
 	height: 200px;
-	background-color: #2E3C43;
+	background-color: $grey_blue;
 	.list-nav,
 	.list-link  {
 		position: relative;
@@ -11,7 +18,7 @@ footer {
 		a {
 			color: #5e6e78;
 			margin: 0 10px 0 0;
-			transition: color 0.4s cubic-bezier(0.04, 0.68, 0.43, 0.93);
+			transition: color 0.4s $bezier;
 			&:hover,
 			&:active,
 			&.active {

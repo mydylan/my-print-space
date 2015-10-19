@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mydylan/my-print-space",
   "devDependencies": {
     "bootstrap": "^3.3.5",
+    "bootstrap-carousel-swipe": "0.0.6",
     "font-awesome": "^4.4.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",

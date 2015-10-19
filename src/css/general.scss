@@ -1,3 +1,11 @@
+$pink: #ff4f81;
+$grey_blue: #2E3C43;
+$light_blue: #00cdaf;
+$light_grey: #ddd;
+$dark_grey: #8d8d8d;
+$bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,4 +71,10 @@ a {
 }
 .margin-none {
 	margin: 0 !important;
+}
+.clearfix {
+	&::before {
+	    display: table;
+	    content: " ";
+	}
 }

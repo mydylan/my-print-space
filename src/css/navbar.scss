@@ -1,5 +1,13 @@
+$pink: #ff4f81;
+$grey_blue: #2E3C43;
+$light_blue: #00cdaf;
+$light_grey: #ddd;
+$dark_grey: #8d8d8d;
+$bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
+
+
 .navigation {
-	background-color: #2E3C43;
+	background-color: $grey_blue;
 	width: 80% !important;	
 	.nav-list {
 		position: relative;
@@ -9,6 +17,7 @@
 			margin: 0 0 30px 0;
 		}
 		a {
+			color: white;
 			&.active {
 				color: #00cdaf;
 			}

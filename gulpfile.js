@@ -51,7 +51,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('reload', ['clean', 'slm', 'jsbuild', 'sass'], function() {
-    gulp.src('./dist/main.html')
+    gulp.src('./dist/product_details.html')
         .pipe(connect.reload());
 });
 
