@@ -213,25 +213,31 @@ html lang="en"
 									.item-shipping-info.tab-pane id="tab-2"
 									.item-technology.tab-pane id="tab-3"
 							.item-details.visible-xs
-								p.title-block Details
+								h3 Details
 								.item-size
 									.item-size-list
-										p Available sizes
-										.size-list.clearfix
+										h4 Available sizes
+										.size-list
 											.size.active S
 											.size.active M
 											.size L
 											.size XL
 											.size XXL
 									.item-size-table
-										p Measurements
+										h4 Measurements
 										.size-table
 											table.table
 												tbody
 													tr
 														th	
-														th	Chest (inches)
-														th	Waist (inches)
+														th	
+															| Chest 
+															br /
+															| (inches)
+														th	
+															|Waist
+															br /
+															| (inches)
 													tr
 														th	XS
 														th	30-32
@@ -261,7 +267,7 @@ html lang="en"
 														th	30-32
 														th	34-36
 								.item-color
-									p Color
+									h4 Color
 									ul.color-wrapper.clearfix
 										li style="background-color: #42BF74"
 										li style="background-color: #FCC459"
@@ -272,16 +278,22 @@ html lang="en"
 										li style="background-color: #CC7FF9"
 										li style="background-color: #A7EECF"
 								.item-material
-								p Material 
-								ul.material-wrapper.clearfix
-									li style="background: #EC8EFA"	
-									li style="background: #517FC5"
-									li style="background: #A7EECF"
-									li style="background: #CC7FF9"
-									li style="background: #42BF74"
-							.item-shipping-info
-							.item-technology
-				.bottom-panel
+									h4 Material 
+									ul.material-wrapper.clearfix
+										li style="background: #EC8EFA"	
+										li style="background: #517FC5"
+										li style="background: #A7EECF"
+										li style="background: #CC7FF9"
+										li style="background: #42BF74"
+							.item-shipping-info.visible-xs
+								h3 Shipping Info
+								.text-wrapper
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias obcaecati repudiandae eos ipsam voluptas aut reprehenderit aspernatur amet minus facilis ratione delectus, distinctio eius cupiditate nesciunt recusandae rerum quasi cum.
+							.item-technology.visible-xs
+								h3 Technology
+								.text-wrapper
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe magni repellat deleniti veritatis vero labore accusantium, animi quidem. Doloremque officia quae consectetur odit qui, recusandae laboriosam debitis saepe est aspernatur!
+				.bottom-panel.hidden-xs
 					.nav-items
 						a.nav-left-arrow.carousel-control href="#recomended-carousel" data-slide="prev"
 						p RECOMMENDED
@@ -290,7 +302,6 @@ html lang="en"
 						.carousel-inner
 							.item.active
 								.row
-									
 									a.col-sm-3.item-product href="product_details.html"
 										.item-img
 											img src="http://placehold.it/160x160" alt=""
@@ -304,7 +315,60 @@ html lang="en"
 											span.item-price-old
 												i.fa.fa-usd 
 												| 16.00
-									
+									a.col-sm-3.item-product href="product_details.html"
+										.item-img
+											img src="http://placehold.it/160x160" alt=""
+										.item-name 
+											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+										.item-option
+											span.item-new NEW
+											p.item-price
+												i.fa.fa-usd 
+												| 16.00
+											span.item-price-old
+												i.fa.fa-usd 
+												| 16.00
+									a.col-sm-3.item-product href="product_details.html"
+										.item-img
+											img src="http://placehold.it/160x160" alt=""
+										.item-name 
+											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+										.item-option
+											span.item-new NEW
+											p.item-price
+												i.fa.fa-usd 
+												| 16.00
+											span.item-price-old
+												i.fa.fa-usd 
+												| 16.00
+									a.col-sm-3.item-product href="product_details.html"
+										.item-img
+											img src="http://placehold.it/160x160" alt=""
+										.item-name 
+											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+										.item-option
+											span.item-new NEW
+											p.item-price
+												i.fa.fa-usd 
+												| 16.00
+											span.item-price-old
+												i.fa.fa-usd 
+												| 16.00
+							.item
+								.row
+									a.col-sm-3.item-product href="product_details.html"
+										.item-img
+											img src="http://placehold.it/160x160" alt=""
+										.item-name 
+											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+										.item-option
+											span.item-new NEW
+											p.item-price
+												i.fa.fa-usd 
+												| 16.00
+											span.item-price-old
+												i.fa.fa-usd 
+												| 16.00
 									a.col-sm-3.item-product href="product_details.html"
 										.item-img
 											img src="http://placehold.it/160x160" alt=""
@@ -348,7 +412,6 @@ html lang="en"
 												| 16.00
 							.item
 								.row
-									
 									a.col-sm-3.item-product href="product_details.html"
 										.item-img
 											img src="http://placehold.it/160x160" alt=""
@@ -404,64 +467,61 @@ html lang="en"
 											span.item-price-old
 												i.fa.fa-usd 
 												| 16.00
-							.item
-								.row
-									
-									a.col-sm-3.item-product href="product_details.html"
-										.item-img
-											img src="http://placehold.it/160x160" alt=""
-										.item-name 
-											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
-										.item-option
-											span.item-new NEW
-											p.item-price
-												i.fa.fa-usd 
-												| 16.00
-											span.item-price-old
-												i.fa.fa-usd 
-												| 16.00
-									
-									a.col-sm-3.item-product href="product_details.html"
-										.item-img
-											img src="http://placehold.it/160x160" alt=""
-										.item-name 
-											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
-										.item-option
-											span.item-new NEW
-											p.item-price
-												i.fa.fa-usd 
-												| 16.00
-											span.item-price-old
-												i.fa.fa-usd 
-												| 16.00
-									
-									a.col-sm-3.item-product href="product_details.html"
-										.item-img
-											img src="http://placehold.it/160x160" alt=""
-										.item-name 
-											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
-										.item-option
-											span.item-new NEW
-											p.item-price
-												i.fa.fa-usd 
-												| 16.00
-											span.item-price-old
-												i.fa.fa-usd 
-												| 16.00
-									
-									a.col-sm-3.item-product href="product_details.html"
-										.item-img
-											img src="http://placehold.it/160x160" alt=""
-										.item-name 
-											p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
-										.item-option
-											span.item-new NEW
-											p.item-price
-												i.fa.fa-usd 
-												| 16.00
-											span.item-price-old
-												i.fa.fa-usd 
-												| 16.00
+				.bottom-panel-mobile.visible-xs
+					h2 RECOMMENDED
+					.row
+						a.item-product href="product_details.html"
+							.item-img
+								img src="http://placehold.it/160x160" alt=""
+							.item-name 
+								p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+							.item-option
+								span.item-new NEW
+								p.item-price
+									i.fa.fa-usd 
+									| 16.00
+								span.item-price-old
+									i.fa.fa-usd 
+									| 16.00
+						a.item-product href="product_details.html"
+							.item-img
+								img src="http://placehold.it/160x160" alt=""
+							.item-name 
+								p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+							.item-option
+								span.item-new NEW
+								p.item-price
+									i.fa.fa-usd 
+									| 16.00
+								span.item-price-old
+									i.fa.fa-usd 
+									| 16.00
+						a.item-product href="product_details.html"
+							.item-img
+								img src="http://placehold.it/160x160" alt=""
+							.item-name 
+								p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+							.item-option
+								span.item-new NEW
+								p.item-price
+									i.fa.fa-usd 
+									| 16.00
+								span.item-price-old
+									i.fa.fa-usd 
+									| 16.00
+						a.item-product href="product_details.html"
+							.item-img
+								img src="http://placehold.it/160x160" alt=""
+							.item-name 
+								p American Apparel 2001 Fine Jersey Short Sleeve Men T-Shirt
+							.item-option
+								span.item-new NEW
+								p.item-price
+									i.fa.fa-usd 
+									| 16.00
+								span.item-price-old
+									i.fa.fa-usd 
+									| 16.00
 			footer
 				.list-nav.hidden-xs
 					a href="#" PRODUCTS
