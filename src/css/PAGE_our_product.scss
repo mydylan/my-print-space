@@ -5,6 +5,14 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
+
 /**********************
 	DESKTOP
 ***********************/
@@ -99,16 +107,18 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 		background-color: #f4f4f4;
 		cursor: pointer;
 		box-shadow: none;
-		&:last-child {
-			width: 26.415%;
-			margin: 0;
-		}
 		&:hover,
 		&:active,
 		&:focus {
 			background-color: #f1f1f1;
 			border: none;
 		}
+	}
+	.search {
+		width: 26.415%;
+		margin: 0;
+		font-family: $light;
+		cursor: text;
 	}
 	.filter {
 		user-select: none;
@@ -146,6 +156,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 		color: #8d8d8d;
 	    line-height: 36px;
 	    margin: 0 0 0 20px;
+	    font-family: $light;
 	}
 
 	.glyphicon-chevron-down {    
@@ -221,9 +232,11 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 		h1 {
 			color: #00cdaf;
 			margin: 65px 0 24px 0;
+			font-family: $light;
 		}
 		p {
 			color: #8d8d8d;
+			font-family: $ultralight;
 		}
 	}
 
@@ -247,6 +260,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 		    text-decoration: none;
 		    padding-bottom: 1px;
 		    border-bottom: 1px solid;
+			font-family: $light;
 		}
 	}
 }
@@ -368,14 +382,14 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 	.list-items {
-		.item:nth-child(2n) {
+		.item-product:nth-child(2n) {
 			border-right: none;
 		}
 	}
 }
 @media screen and (min-width: 992px) {
 	.list-items {
-		.item:nth-child(4n) {
+		.item-product:nth-child(4n) {
 			border-right: none;
 		}
 	}

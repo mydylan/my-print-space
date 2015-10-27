@@ -5,6 +5,15 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
+
+
 header {
 	position: absolute;
 	width: 100%;
@@ -13,7 +22,6 @@ header {
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
-
 	.logo {
 		width: 180px;
 		height: 60px;
@@ -58,6 +66,18 @@ header {
 			background: url(_link_/left-arrow.png) no-repeat center;
 			background-size: 13px;
 		}
+		.list-ham {
+			display: block;
+			position: relative;
+		    left: 15px;
+		    top: 21px;
+			color: white;
+			font-size: 20px;
+			width: 25px;
+			height: 20px;
+			background: url(_link_/ham.png) no-repeat center;
+			background-size: 25px;
+		}
 	}
 
 	.account {
@@ -65,6 +85,7 @@ header {
 		align-items: center;
 		margin: 0 20px 0 0;
 		a {
+			font-family: $light;	
 			display: block;
 			width: 90px;
 			height: 36px;
@@ -111,6 +132,9 @@ header {
 			background-size: 21px 24px;
 		}
 	}
+}
+.transparent {
+	background-color: transparent;
 }
 
 

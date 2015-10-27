@@ -1,0 +1,10 @@
+   styles for page
+     --arguments.scss
+     --button.scss
+     --footer.scss
+     --header.scss
+     --general.scss
+     --item-product.scss
+     --navbar.scss
+     --top-panel.scss
+	+ PAGE.SCSS

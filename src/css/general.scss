@@ -5,6 +5,14 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -24,6 +32,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	font-family: $regular;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -56,8 +65,7 @@ html {
 }
 body {
 	font-size: 14px;
-	font-weight: 400;
-	font-family: Montserrat-Light;
+	font-family: $regular;
 	overflow: hidden;
 }
 a {

@@ -5,6 +5,13 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
 
 .navigation {
 	background-color: $grey_blue;
@@ -17,6 +24,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 			margin: 0 0 30px 0;
 		}
 		a {
+			font-family: $light;
 			color: white;
 			&.active {
 				color: #00cdaf;

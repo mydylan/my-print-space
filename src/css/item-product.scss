@@ -1,6 +1,15 @@
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
+
 .item-product {
 	height: 320px;
 	border-right: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 	display: block;
 	position: relative;
 	&:hover {
@@ -17,9 +26,6 @@
 			border-radius: 2px;
 		}
 	}
-	&:last-child {
-		border-right: none;
-	}
 	.item-img {
 		position: relative;
 		margin: 30px 0;
@@ -34,6 +40,9 @@
 		text-align: center;
 		margin: 0 auto;
 	    max-width: 400px;
+	    p {
+		    font-family: $light;
+	    }
 	}
 	.item-option {
 		position: relative;

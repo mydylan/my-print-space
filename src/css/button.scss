@@ -5,23 +5,33 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
 
 .button {
+    font-family: $light;
 	display: block;
 	position: relative;    
 	padding: 13px 29px;
-    border-radius: 20px;
+    border-radius: 50px;
     width: 140px;
     font-size: 14px;
     color: white;
     box-sizing: border-box;
     cursor: pointer;
+    text-align: center;
+    line-height: 18px;
     &:hover {
 		text-decoration: none;
 	}
 	&:active {
 	    box-shadow: 2px;
-	    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .075);
+	    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, .075);
 	}
 }
 .pink {

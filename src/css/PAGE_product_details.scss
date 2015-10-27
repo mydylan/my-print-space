@@ -5,6 +5,13 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
 
 /**********************
 	DESKTOP
@@ -106,21 +113,24 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				color: #000;
 				font-size: 20px;
 				display: block;
-				font-weight: 600;
 				line-height: 35px;
 			}
 			.item-price {
 				color: #000;
 				font-size: 24px;
 				display: block;
-				font-family: Montserrat-Regular;
-				font-weight: 600;
+				font-family: $bold;
 		        margin: 25px 0 30px 0;
+			}
+			.button {
+				font-family: $regular;
+				padding: 13px 26px;
 			}
 			.item-text {
 				color: #8d8d8d;
 				line-height: 25px;
 				text-align: justify;
+				font-family: $light;
 				margin: 50px 30px 0 0;
 			}
 		}
@@ -149,7 +159,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 						color: #ddd;
 						border: none;
 						margin: 0;
-					    font-weight: 600;
 						transition: color 0.4s $bezier;
 						padding: 10px 0;
 						&:hover {
@@ -180,7 +189,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 					.item-size-list {
 						p {
 							color: #000;
-							font-weight: 600;
 						}
 						.size-list {
 							display: flex;
@@ -207,8 +215,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 					.item-size-table {
 						margin: 40px 0 0 0;
 						p {
-							color: #000;
-							font-weight: 600;	
+							color: #000;	
 						}
 						.size-table {
 							margin: 20px 0 0 0;
@@ -217,7 +224,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 								border-bottom: 1px solid #ececec;
 								&:first-child {	
 									color: #000;
-									font-weight: 600;
 									th {
 										color: #000;
 									}
@@ -230,7 +236,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 								text-align: center;
 								&:first-child {
 									color: #000;
-									font-weight: 600;
 								}
 								&:last-child {
 									padding: 16px 0;
@@ -249,7 +254,6 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				.item-material {
 					p {
 						color: #000;
-						font-weight: 600;
 					}
 					.color-wrapper,
 					.material-wrapper {
@@ -257,11 +261,16 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 							width: 40px;
 							height: 40px;
 							float: left;
-							border-radius: 50%;
 							margin: 20px 30px 0 0;
 							&:last-child {
 								margin: 20px 0 0 0;
 							}
+						}
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
 						}
 					}
 				}
@@ -303,17 +312,14 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 					content: "";
 					width: 52px;
 					height: 12px;
-					background: url(_link_/right-arrow.png) no-repeat center;
+					background: url(_link_/right-blue-arrow.png) no-repeat center;
 				}
 			}
 			.nav-left-arrow {
-				&:before {
-					transform: rotate(180deg);
-				}
+				transform: rotate(180deg);
 			}
 			p {
 				font-size: 20px;
-				font-weight: 600;
 				text-align: center;
 			}
 		}
@@ -400,7 +406,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				    border-bottom: 1px solid #ddd;
 				    position: relative;
 				    padding: 0 0 10px 0;
-				    font-weight: 600;
+				    
 				    &::before {
 						content: "";
 						width: 50px;
@@ -413,7 +419,7 @@ $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 				}
 				h4 {
 					color: #000;
-					font-weight: 600;
+					
 				}
 				.item-about {
 					.item-name {

@@ -5,6 +5,14 @@ $light_grey: #ddd;
 $dark_grey: #8d8d8d;
 $bezier: cubic-bezier(0.04, 0.68, 0.43, 0.93);
 
+$hairline: Montserrat-Hairline;
+$ultralight: Montserrat-UltraLight;
+$light: Montserrat-Light;
+$regular: Montserrat-Regular;
+$bold: Montserrat-Bold;
+$semibold: Montserrat-SemiBold;
+$black: Montserrat-Black;
+
 footer {
  	position: relative;
 	width: 100%;
@@ -15,6 +23,7 @@ footer {
 		position: relative;
 		text-align: center;
 		padding: 40px 0 0 0;
+		font-family: $regular;
 		a {
 			color: #5e6e78;
 			margin: 0 10px 0 0;
@@ -42,6 +51,7 @@ footer {
 		position: relative;
 		text-align: center;
 		padding: 40px 0 0 0;
+		font-family: $light;
 	}
 }
 
